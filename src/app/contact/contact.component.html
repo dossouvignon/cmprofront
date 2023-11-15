@@ -1,0 +1,124 @@
+<div class="container-fluid">
+                     
+    <!-- row -->
+    <div class="midde_cont">
+      <div class="container-fluid">
+         <div class="row column_title">
+            <div class="col-md-12">
+               <div class="page_title">
+                  <h2>Contacts</h2>
+               </div>
+            </div>
+         </div>
+
+         <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <div class="input-group contacts-search mb-4">
+               <input type="text" class="form-control" placeholder="Search here...">
+               <span class="input-group-text"><a href="javascript:void(0)"><i class="flaticon-381-search-2"></i></a></span>
+            </div>
+            <div class="mb-4">
+                 <!-- <a href="javascript:void(0);" class="btn btn-primary btn-rounded fs-18">+ New Contact</a>-->
+               <a routerLink="/formulaire" class="btn btn-primary btn-rounded fs-18">+ New Contact</a>
+            </div>
+         </div>
+
+         <div class="container-fluid">
+         
+            <!-- row -->
+            <div class="row">
+               <!-- table section -->
+              
+              
+               <!-- table section -->
+               <div class="col-md-12">
+                  <div class="white_shd full margin_bottom_30">
+                     <div class="full graph_head">
+                        <div class="heading1 margin_0">
+                           <h2>Responsive Tables</h2>
+                        </div>
+                     </div>
+                     <div class="table_section padding_infor_info">
+                        <div class="table-responsive-sm">
+                           <table class="table" >
+                              <thead>
+                                 <tr>
+                                    <th>id</th>
+                                    <th>nom</th>
+                                    <th>prenom</th>
+                                    <th>email</th>
+                                    <th>numTelephone</th>
+                                    <th>adresseHabitation</th>
+                                    <th>preoccupation</th>
+                                    <th>actions</th>
+                                    
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr *ngFor="let contact of contacts">
+                                    <td>{{contact.id}}</td>
+                                    <td>{{contact.nom}}</td>
+                                    <td>{{contact.prenom}}</td>
+                                    <td>{{contact.email}}</td>
+                                    <td>{{contact.numTelephone}}</td>
+                                    <td>{{contact.adresseHabitation}}</td>
+                                    <td>{{contact.preoccupation}}</td>
+                                    <td>
+                                       <a routerLink="/update-contact/{{contact.id}}" ><span class="edit-icon">&#9998;</span></a>
+                                       
+                                       <span class="delete-icon" (click)="supprimerContact(contact)">&#10006;</span>
+                                      
+                                   </td>
+                                   <!--<td><a class="btn btn-success" [routerLink]="['/ modifierContact',contact.preoccupation]">Modifier</a></td>-->
+                                   <!--<td> <a class="btn btn-danger" (click)="supprimerContact(contact)"></a>Supprimer</td> -->
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <nav aria-label="Page navigation example">
+                              <ul class="pagination justify-content-end">
+                                <li class="page-item disabled">
+                                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                  <a class="page-link" href="#">Next</a>
+                                </li>
+                              </ul>
+                            </nav>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- row -->
+      </div>
+      <!-- end dashboard inner -->
+   </div>
+ </div>
+
+ <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <!-- wow animation -->
+      <script src="assets/js/animate.js"></script>
+      <!-- select country -->
+      <script src="assets/js/bootstrap-select.js"></script>
+      <!-- owl carousel -->
+      <script src="assets/js/owl.carousel.js"></script> 
+      <!-- chart js -->
+      <script src="assets/js/Chart.min.js"></script>
+      <script src="assets/js/Chart.bundle.min.js"></script>
+      <script src="assets/js/utils.js"></script>
+      <script src="assets/js/analyser.js"></script>
+      <!-- nice scrollbar -->
+      <script src="assets/js/perfect-scrollbar.min.js"></script>
+      <script>
+         var ps = new PerfectScrollbar('#sidebar');
+      </script>
+      <!-- custom js -->
+      <script src="assets/js/custom.js"></script>
+      <!-- calendar file css -->     
+      <script src="assets/js/semantic.min.js"></script>
+      <script></script>

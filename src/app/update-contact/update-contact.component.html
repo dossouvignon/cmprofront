@@ -1,0 +1,83 @@
+<div class="midde_cont">
+    <div class="container-fluid">
+       <div class="row column_title">
+          <div class="col-md-12">
+             <div class="page_title">
+                <h2>Contacts</h2>
+             </div>
+          </div>
+       </div>
+       <!-- row -->
+       <div class="row column1">
+          <div class="col-md-12">
+             <div class="white_shd full margin_bottom_30">
+                <div class="full graph_head">
+                   <div class="heading1 margin_0">
+                      <h2>Formulaire de contact</h2>
+                   </div>
+                </div>
+                <div class="full price_table padding_infor_info">
+                   <div class="row">
+                   
+                      <div class="container">
+                         <form id="monFormulaire" action="#" method="post">
+                             <label  for="nom">Nom :</label>
+                             <input type="text" id="nom" [(ngModel)]="currentContact.nom" name="nom" required>
+
+                             <label for="nom">Prenom:</label>
+                             <input type="text" id="prenom" [(ngModel)]="currentContact.prenom" name="prenom" required>
+                 
+                             <label for="email">Email :</label>
+                             <input type="email" id="email" [(ngModel)]="currentContact.email" name="email" required>
+
+                             <label for="nom">Contact:</label>
+                             <input type="text" id="numTelephone" [(ngModel)]="currentContact.numTelephone" name="numTelephone" required>
+
+                             <label for="nom">adresseHabitation:</label>
+                             <input type="text" id="adresseHabitation" [(ngModel)]="currentContact.adresseHabitation" name="adresseHabitation" required>
+                 
+                             <label for="message">Preoccupation:</label>
+                             <textarea id="message" name="message" rows="" [(ngModel)]="currentContact.preoccupation" required></textarea>
+
+                             <br> <br>
+                 
+                             <input type="submit" (click)=" modifierContact(currentContact)" value="Enrégistrer">
+                             <!--<input type="submit" value="Enrégistrer">--> 
+                         </form>
+                     </div>
+
+                   </div>
+                </div>
+             </div>
+          </div>
+          <!-- end row -->
+       </div>
+    </div>
+    <!-- end dashboard inner -->
+ </div>
+
+ <script src="assets/js/jquery.min.js"></script>
+ <script src="assets/js/popper.min.js"></script>
+ <script src="assets/js/bootstrap.min.js"></script>
+ <!-- wow animation -->
+ <script src="assets/js/animate.js"></script>
+ <!-- select country -->
+ <script src="assets/js/bootstrap-select.js"></script>
+ <!-- owl carousel -->
+ <script src="assets/js/owl.carousel.js"></script> 
+ <!-- chart js -->
+ <script src="assets/js/Chart.min.js"></script>
+ <script src="assets/js/Chart.bundle.min.js"></script>
+ <script src="assets/js/utils.js"></script>
+ <script src="assets/js/analyser.js"></script>
+ <!-- nice scrollbar -->
+ <script src="assets/js/perfect-scrollbar.min.js"></script>
+ <script>
+    var ps = new PerfectScrollbar('#sidebar');
+ </script>
+ <!-- custom js -->
+ <script src="assets/js/custom.js"></script>
+ <!-- calendar file css -->     
+ <script src="assets/js/semantic.min.js"></script>
+ <script></script>
+
